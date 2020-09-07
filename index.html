@@ -1,19 +1,130 @@
 <!DOCTYPE html>
-
 <html lang="en">
+	<head>
+		<meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link rel="icon" href="res/images/favicon.ico">
+	    <title>My Dashboard</title>
+	</head>
+	<body>
+		<header>
+			<strong>Welcome to your dashboard!</strong>
 
-<head>
+			<section>
+				<div class="">
+					<img src="res/images/me.png" alt="My picture">
+				</div>
 
-    <meta charset="UTF-8">
+				<div class="">
+					<ul>
+						<li>John Doe</li>
+			            <li>27/06/1993</li>
+			            <li>Software Engineering</li>
+					</ul>
+				</div>
 
-    <link rel="icon" href="res/images/favicon.ico">
+				<div class="">
+					<strong>2.65</strong>
+				</div>
+			</section>
 
-    <title>My Dashboard</title>
+			<section>
+				<h1>Courses</h1>
 
-</head>
+				<table>
+					<thead>
+						<tr>
+							<th>#</th>
+							<th>Course Title</th>
+							<th>Semester</th>
+							<th>Grade</th>
+						</tr>
+					</thead>
 
-<body>
+					<tbody>
+						<tr>
+							<td>1</td>
+			                <td>
+			                  <a href="https://courses.cs.ut.ee/2019/asd/fall" target="_blank">Agile Software Development</a>
+			                </td>
+			                <td>Semester 1 fall</td>
+			                <td>82</td>
+						</tr>
+						<tr>
+							<td>2</td>
+			                <td>
+			                  <a href="https://courses.cs.ut.ee/2019/SM/fall" target="_blank">Systems modeling</a>
+			                </td>
+			                <td>Semester 1 spring</td>
+			                <td>85</td>
+						</tr>
+						<tr>
+							<td>3</td>
+			                <td>
+			                  <a href="https://courses.cs.ut.ee/2020/OOP/spring" target="_blank">Object-Oriented Programming</a>
+			                </td>
+			                <td>Semester 2 spring</td>
+			                <td>99</td>
+						</tr>
+						<tr>
+							<td>4</td>
+							<td>
+								<a href="https://courses.cs.ut.ee/2020/scml/fall" target="_blank"> Estonian language Level A2</a>
+							</td>
+			                <td>Semester 2 fall</td>
+			                <td>65</td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<td colspan="100%">
+								<br>
+								<button type="button" name="button">Add new course</button>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="100%">
+								<form class="" action="index.html" method="post">
 
-</body>
+									<label for="title">Title </label>
+				                    <input type="text" name="title" value=""><br>
 
-</html> 
+				                    <label for="semester">Semester</label>
+				                    <input type="text" name="semester" value=""><br>
+
+				                    <input type="checkbox" name="s1" value="">
+				                    <label for="s1">Semester 1 Fall</label><br>
+
+				                    <input type="checkbox" name="s2" value="">
+				                    <label for="s2">Semester 1 Spring</label><br>
+
+				                    <input type="checkbox" name="s3" value="">
+				                    <label for="s3">Semester 2 Fall</label><br>
+
+				                    <input type="checkbox" name="s4" value="">
+				                    <label for="s4">Semester 2 Spring</label><br>
+
+									<label for="grade">Grade</label>
+									<input type="number" name="grade" value="" min="0" max="100"><br>
+
+								</form>
+							</td>
+						</tr>
+					</tfoot>
+				</table>
+			</section>
+		</header>
+
+		<footer>
+			<ul>
+				<li>
+					<a href="https://ois2.ut.ee/" target="_blank">OIS</a>
+				</li>
+
+				<li>
+					<a href="https://courses.cs.ut.ee/" target="_blank">Courses</a>
+				</li>
+			</ul>
+		</footer>
+	</body>
+</html>
